@@ -1,0 +1,25 @@
+[tools]
+node = "22"
+bun = "latest"
+
+[tasks.dev]
+description = "Run MCP server locally with bun"
+run = "bun run src/index.ts"
+
+[tasks.build]
+description = "Build TypeScript"
+run = "npx tsc"
+
+[tasks.test]
+description = "Test the MCP by adding to Claude Code settings and running a tool"
+run = """
+echo "Add this to your .claude/settings.json:"
+echo '  "mcpServers": {'
+echo '    "brandkit": {'
+echo '      "command": "bun",'
+echo '      "args": ["run", "'$(pwd)'/src/index.ts"]'
+echo '    }'
+echo '  }'
+echo ""
+echo "Then restart Claude Code and try: /brandkit"
+"""
