@@ -1,6 +1,6 @@
 {
   "name": "@atomichealth/brandkit-mcp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Brandkit MCP server — access brand assets from Claude Code",
   "type": "module",
   "bin": {
