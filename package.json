@@ -1,6 +1,6 @@
 {
   "name": "@atomichealth/brandkit-mcp",
-  "version": "0.1.0",
+  "version": "1.0.2",
   "description": "Brandkit MCP server — access brand assets from Claude Code",
   "type": "module",
   "bin": {
@@ -30,31 +30,54 @@
     "dist"
   ],
   "release": {
-    "branches": ["main"],
+    "branches": [
+      "main"
+    ],
     "plugins": [
       [
         "@semantic-release/commit-analyzer",
         {
           "preset": "conventionalcommits",
           "releaseRules": [
-            { "type": "feat", "release": "minor" },
-            { "type": "fix", "release": "patch" },
-            { "type": "perf", "release": "patch" },
-            { "type": "refactor", "release": "patch" },
-            { "breaking": true, "release": "major" }
+            {
+              "type": "feat",
+              "release": "minor"
+            },
+            {
+              "type": "fix",
+              "release": "patch"
+            },
+            {
+              "type": "perf",
+              "release": "patch"
+            },
+            {
+              "type": "refactor",
+              "release": "patch"
+            },
+            {
+              "breaking": true,
+              "release": "major"
+            }
           ]
         }
       ],
       "@semantic-release/release-notes-generator",
       [
         "@semantic-release/changelog",
-        { "changelogFile": "CHANGELOG.md" }
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
       ],
       "@semantic-release/npm",
       [
         "@semantic-release/git",
         {
-          "assets": ["CHANGELOG.md", "package.json", "package-lock.json"],
+          "assets": [
+            "CHANGELOG.md",
+            "package.json",
+            "package-lock.json"
+          ],
           "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
         }
       ],
@@ -62,6 +85,8 @@
     ]
   },
   "commitlint": {
-    "extends": ["@commitlint/config-conventional"]
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
