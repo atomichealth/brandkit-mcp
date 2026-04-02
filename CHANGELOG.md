@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/atomichealth/brandkit-mcp/compare/v1.0.0...v1.0.1) (2026-04-02)
+
+
+### Bug Fixes
+
+* trigger initial npm publish ([b8ef113](https://github.com/atomichealth/brandkit-mcp/commit/b8ef113d1bb7cb8ca7e6e4f774d6439b81d66965))
+
 # 1.0.0 (2026-04-02)
 
 
