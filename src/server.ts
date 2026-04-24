@@ -7,6 +7,7 @@ import { registerPhotoTools } from "./tools/photos.js";
 import { registerIconTools } from "./tools/icons.js";
 import { registerFontTools } from "./tools/fonts.js";
 import { registerSearchTools } from "./tools/search.js";
+import { registerDocumentTools } from "./tools/documents.js";
 
 export function createServer(): McpServer {
   const server = new McpServer({
@@ -18,6 +19,7 @@ export function createServer(): McpServer {
   registerIconTools(server);
   registerFontTools(server);
   registerSearchTools(server);
+  registerDocumentTools(server);
 
   return server;
 }
