@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/atomichealth/brandkit-mcp/compare/v1.0.3...v1.1.0) (2026-04-24)
+
+
+### Features
+
+* **documents:** add read-only brand_list_documents and brand_read_document tools ([3a06e44](https://github.com/atomichealth/brandkit-mcp/commit/3a06e4494f66b82fe68b6be200393c019293b593))
+
 ## [1.0.3](https://github.com/atomichealth/brandkit-mcp/compare/v1.0.2...v1.0.3) (2026-04-02)
 
 
